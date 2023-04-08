@@ -24,7 +24,7 @@ fn math_operation(reg: Regex, mut operation: String, operator: &str) -> String {
 }
 
 fn main() {
-  println!("Por favor introduce tu expresion: ");
+  println!("Please enter your operation: ");
   let mut expresion: String = String::new();
   std::io::stdin().read_line(&mut expresion).unwrap();
 
@@ -37,7 +37,7 @@ fn main() {
     result = math_operation(re, result, operator);
   }
 
-  println!("Resultado: {result}");
+  println!("Result: {result}");
 
 }
 
